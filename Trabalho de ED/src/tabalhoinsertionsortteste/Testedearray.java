@@ -1,15 +1,19 @@
-package tabalhoinsertionsort;
+package tabalhoinsertionsortteste;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class InsertionSort {
+public class Testedearray {
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		long tempoInicial = System.currentTimeMillis();
-			int []v = {5,4,3,100,5,7,9,1,5,5,65,65,98,9,98,56,589,86,5,989,5,89,85,65,9,898,5659,85,6598,5989,85658,8,9,85,689,89};
+		System.out.println();
+		int n = input.nextInt();
+			int v[] = new int[n];
 			nsertionSort(v);
 			System.out.println("InsertSort---" + Arrays.toString(v));
 		
-		System.out.println("o metodo executou em " + (System.currentTimeMillis()- tempoInicial)+ " Segundos");
+		System.out.println("o metodo executou em " + (System.currentTimeMillis()- tempoInicial));
 	}	
 					
 
@@ -28,3 +32,6 @@ public class InsertionSort {
 		
 	}		
 }
+
+
+

@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.util.Scanner;
 public class InsertinSorttest {
 	public static void main(String[] args) {
-
+		long tempoInicial = System.currentTimeMillis();
 		  int i,j;
 		  String S;
-		  String[]v= {"na","aC","Af","Ac","Ef"};
+		  String[]v= {"natalia","Eleias","Ana","Eliasa","Fernado","Luis","magu","Lolis","albert","may","lulu","Lusia","Gabriel","felipe","Fabio","erik","Henrique","emo","ZOI"};
 		  
 	  for (j = 1; j < v.length; j++) { 
 		    S = v[j];
@@ -26,6 +26,7 @@ public class InsertinSorttest {
 		    System.out.println(Arrays.toString(v));
 		  }
 		  System.out.println("InsertSort---" +Arrays.toString(v));
+		  System.out.println("o metodo executou em " + (System.currentTimeMillis()- tempoInicial)+ " Segundos");
 
 	}
 }
